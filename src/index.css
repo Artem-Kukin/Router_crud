@@ -1,13 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.add-card {
+  text-align: center;
+}
+.add-card button,
+.create-card button {
+  background: #4469ae;
+  color: #fff;
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  padding: 5px;
+  width: 75%;
+  background: #e8eaed;
+}
+
+.user-card,
+.create-card,
+.edit-entry {
+  margin: 10px auto;
+  padding: 10px;
+  width: 700px;
+  background: #fff;
+  border-radius: 10px;
+}
+.user-card_title,
+.create-card_title,
+.edit-entry_title {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+.user-card img,
+.create-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.user-card_reaction,
+.create-card_post,
+.edit-entry_post,
+.edit-entry_reaction {
+  margin: 10px 0;
+
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: solid gray 1.5px;
+  border-bottom: solid gray 1.5px;
+}
+
+.user-card_reaction div,
+.edit-entry_reaction div,
+.edit-entry_title div,
+.user-card button,
+.user-card_comments div,
+.create-card_title div,
+.create-card button,
+.edit-entry_save button {
+  cursor: pointer;
+}
+
+.user-card_comments {
+  display: flex;
+  align-items: flex-end;
+}
+.user-card_comments input {
+  border-radius: 10px;
+  width: 450px;
+}
+
+.user-card_edit button {
+  margin: 10px;
 }
